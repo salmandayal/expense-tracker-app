@@ -6,18 +6,36 @@ import IncomeExpenses from "./components/IncomeExpenses"
 import TransactionList from "./components/TransactionList"
 import AddTrasaction from "./components/AddTrasaction"
 import { GlobalContextProvider } from "./context/GlobalState"
+//mui stuff
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
+import themeObject from './util/theme'
+//MUI
+import { Grid, Divider } from "@material-ui/core"
+
+
+
+const theme = createMuiTheme(themeObject);
 
 function App() {
   return (
-    <GlobalContextProvider>
-      <Header />
+    <MuiThemeProvider theme={theme}>
+      <GlobalContextProvider>
       <div className='container'>
-        <Balance />
-        <IncomeExpenses />
+      <Header />
+        <Grid container spacing={2}>
+          <Grid item xs={6}>
+            <Balance />
+          </Grid>
+          <Grid item xs={6}>
+           <IncomeExpenses />
+          </Grid>
+        </Grid>
+        <Divider/>
         <TransactionList />
         <AddTrasaction />
       </div>
     </GlobalContextProvider>
+    </MuiThemeProvider>
   )
 }
 

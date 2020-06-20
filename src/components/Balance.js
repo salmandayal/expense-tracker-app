@@ -11,10 +11,10 @@ const Balance = () => {
       : 0
 
   return (
-    <>
-      <h4>Your Balance</h4>
+    <div style={{borderRight:'1px solid #00bcd4',height:'85%'}}>
+      <h4 style={{backgroundColor:'#00bcd4'}}>Your Balance</h4>
       <h1>${balance}</h1>
-    </>
+    </div>
   )
 }
 

@@ -14,14 +14,13 @@ const IncomeExpenses = () => {
 
   return (
     <div className='inc-exp-container'>
-      <div>
-        <h4>Income</h4>
-        <p className='money plus'>+${income}</p>
-      </div>
-      <div>
-        <h4>Expense</h4>
-        <p className='money minus'>-${expense}</p>
-      </div>
+
+          <h4 style={{backgroundColor:'#1abe5e',color:"white"}}>Income</h4>
+          <p className='money plus'>+${income}</p>
+
+        <h4 style={{backgroundColor:'#c85649',color:"white"}}>Expense</h4>
+        <p className='money minus'>-${Math.abs(expense)}</p>
+
     </div>
   )
 }
