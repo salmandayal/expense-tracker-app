@@ -25,6 +25,7 @@ const IncomeExpenses = () => {
               duration={2}
               separator=" "
               decimals={2}
+              decimal=","
               prefix="$ "/>  
           </p>
           </div>
@@ -38,6 +39,7 @@ const IncomeExpenses = () => {
             duration={2}
             separator=" "
             decimals={2}
+            decimal=","
             prefix="$ "/>  
         </p>
 
