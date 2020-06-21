@@ -3,9 +3,9 @@ import AppReducer from "./AppReducer"
 //Initial State
 const initialState = {
   transactions: [
-    { id: 1, text: "Groceries", amount: -20, date: "06/19/20"},
-    { id: 2, text: "Laptop", amount: 300 ,date: "06/19/20"},
-    { id: 3, text: "Rent", amount: -10 ,date: "06/19/20"},
+    { id: 1, text: "Groceries", amount: -20, date: "06/21/20"},
+    { id: 2, text: "Laptop", amount: 300 ,date: "06/20/20"},
+    { id: 3, text: "Rent Received", amount: 400 ,date: "06/19/20"},
   ],
 }
 

@@ -49,15 +49,13 @@ const AddTrasaction = () => {
           type='text'
           value={text}
           onChange={e => setText(e.target.value)}
-          placeholder='Enter text...'
         />
           <TextField
             fullWidth
             label='Amount'
             type='number'
             value={amount}
-            onChange={e => setAmount(e.target.value)}
-            placeholder='Enter amount...' />
+            onChange={e => setAmount(e.target.value)}/>
           <Typography variant='subtitle2' color='secondary'>
             (negative - expense, positive - income)</Typography>
         </DialogContent>
