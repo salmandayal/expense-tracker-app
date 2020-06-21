@@ -22,12 +22,13 @@ function App() {
       <GlobalContextProvider>
       <div className='container'>
       <Header />
+      <Divider/>
         <Grid container spacing={2}>
-          <Grid item xs={6}>
-            <Balance />
+          <Grid item xs={6} alignContent='center' justify='center'>
+           <IncomeExpenses />
           </Grid>
           <Grid item xs={6}>
-           <IncomeExpenses />
+            <Balance />
           </Grid>
         </Grid>
         <Divider/>

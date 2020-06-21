@@ -1,8 +1,14 @@
 import React from "react"
 import { Typography } from "@material-ui/core"
+import logo from '../assets/images/logo.png'
 
 const Header = () => {
-  return <Typography variant='h4' color='textPrimary' align='center' >Expense Tracker</Typography>
+  return (
+    <div className="heading">
+      <img src={logo} alt="logo"/>
+      <Typography variant='h4' color='primary' align='center' >Expenser</Typography>
+    </div>
+  )
 }
 
 export default Header

@@ -13,4 +13,6 @@ Run the App 🛩
 
 1) State Management using Context API 📧
 2) Material UI Components: Grids , Dialog , 
-    Expansion, Typography, Textfield, Icon 💖
+    Expansion, Typography, Textfield, Icon 💖*
+3) Counter animation : react-countup
+4) Date & Time : moment.js

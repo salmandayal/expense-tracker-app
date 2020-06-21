@@ -1,6 +1,6 @@
 import React from "react"
 import { useGlobalValue } from "../context/GlobalState"
-
+import CountUp from 'react-countup'
 const Balance = () => {
   const { transactions } = useGlobalValue()
   let balAmounts = transactions.map(tx => tx.amount)
@@ -11,9 +11,17 @@ const Balance = () => {
       : 0
 
   return (
-    <div style={{borderRight:'1px solid #00bcd4',height:'85%'}}>
-      <h4 style={{backgroundColor:'#00bcd4'}}>Your Balance</h4>
-      <h1>${balance}</h1>
+  <div className='current_Balance'>
+      <h4>Your Balance</h4>
+      <h2>
+        <CountUp
+          start='00.00'
+          end={balance}
+          duration={2.5}
+          separator=" "
+          decimals={2}
+          prefix="$ "/>
+      </h2>
     </div>
   )
 }
