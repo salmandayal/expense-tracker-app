@@ -18,7 +18,8 @@ const Balance = () => {
           start='00.00'
           end={balance}
           duration={2.5}
-          separator=" "
+          separator=","
+          decimal="."
           decimals={2}
           prefix="$ "/>
       </h2>
